@@ -1,0 +1,27 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #666;
+  .Index {
+    display: flex;
+    align-items: start;
+    font-size: small;
+    color: white;
+    min-width: 3rem;
+    justify-content: center;
+  }
+  .Subject {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+  }
+}

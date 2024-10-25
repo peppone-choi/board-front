@@ -1,0 +1,39 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+  &:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  &:nth-child(even) {
+    background-color: #fff;
+  }
+  .IndexAndSubject {
+    display: flex;
+    min-width: 500px;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+  .Index {
+    display: flex;
+    align-items: start;
+    font-size: small;
+    color: #666;
+    min-width: 3rem;
+    justify-content: center;
+  }
+  .Subject {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+  }
+  .Ip {
+    font-size: small;
+    color: #666;
+  }
+}
