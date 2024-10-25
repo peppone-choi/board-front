@@ -7,6 +7,8 @@ import cn from "classnames/bind";
 const cx = cn.bind(styled);
 type BoardAppProps = {
   postAll: BoardAll | null;
+  index: number;
+  limit: number;
 };
 
 export const BoardApp = (props: BoardAppProps) => {
@@ -22,8 +24,8 @@ export const BoardApp = (props: BoardAppProps) => {
     <div className={cx("BoardAppWrapper")}>
       <BoardItemHeader />
       {posts &&
-        posts.map((post) => {
-          return <BoardItem post={post} index={Number(post.id)} />;
+        posts.map((post, idx) => {
+          return <BoardItem post={post} index={(props.index - 1) * props.limit + idx + 1} />;
         })}
     </div>
   );

@@ -1,5 +1,6 @@
 import BoardLayout from "../views/board/layouts/Board.layout";
 import BoardIndex from "../views/board/Board.view";
+import { BoardWriteView } from "../views/board/BoardWrite.view";
 
 export const boardRouter = [
   {
@@ -22,6 +23,7 @@ export const boardRouter = [
                 "Content-Type": "application/json",
               },
             });
+            console.log(data);
             const result = await data.json();
             return result;
           } catch (error) {
@@ -41,11 +43,7 @@ export const boardRouter = [
       },
       {
         path: "write",
-        element: (
-          <div>
-            <h2>Board Write</h2>
-          </div>
-        ), // TODO: BoardWrite component
+        element: <BoardWriteView />,
       },
       {
         path: ":postId/edit",

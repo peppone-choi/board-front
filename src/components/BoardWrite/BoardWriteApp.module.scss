@@ -1,0 +1,69 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  padding: 20px;
+}
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  .Title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .Input {
+      padding: 20px;
+      flex-grow: 1;
+      font-size: medium;
+    }
+    span {
+      font-size: larger;
+      font-weight: bold;
+      flex-shrink: 1;
+      color: #666;
+    }
+  }
+  .Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .Label {
+      font-size: large;
+      font-weight: bold;
+    }
+    .Input {
+      padding: 20px;
+      width: 100%;
+      min-height: 70vh;
+      font-size: large;
+      overflow-y: auto;
+    }
+  }
+  .Button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: xx-large;
+  }
+}
+.BackButton {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 20px;
+  font-size: xx-large;
+  background-color: transparent;
+  border: none;
+  text-shadow: 0 0 0 #666;
+  cursor: pointer;
+}
